@@ -1,0 +1,28 @@
+name: GameErauntsiaMCberria
+version: 1.0
+author: galaipa
+main: eus.gamerauntsia.mc.GameErauntsiaMCberria
+depend: [Vault]
+softdepend: [Multiverse-Core]
+commands:
+    ge:
+        description: Jokalari baten webguneko fitxa ikusteko komandoa
+        usage: /ge <izena>
+        aliases: []
+    laguntza:
+        description: Telegramera laguntza mezuak bidaltzeko
+        usage: /laguntza <mezua>
+        aliases: []
+    arauak:
+        description: Zerbitzariko arauak ikusteko
+        usage: /arauak
+        aliases: []
+    erregistratu:
+        description: Webguneko erregistratzeko pausoak ikusi
+        usage: /erregistratu
+        aliases: []
+permissions:
+    ge.user:
+        default: true
+    ge.admin:
+        default: op     

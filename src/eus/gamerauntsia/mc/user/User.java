@@ -19,9 +19,13 @@ public class User {
 	public User(JSONObject json) {
 		geName = json.get("user").toString();
 		mcName = json.get("mc_user").toString();
-		uuid = json.get("uuid").toString();
 		created = json.get("created").toString();
 		rol = Utils.parseString(json.get("rol").toString());
+		
+		if(json.get("uuid") != null)
+			uuid = json.get("uuid").toString();
+		else
+			uuid = "none";
 	}
 
 	@Override
